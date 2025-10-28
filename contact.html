@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Innova Toiture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo-innova.png" alt="Innova Toiture" class="logo-img">
+                    <span>Innova Toiture</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="realisations.html" class="nav-link">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contactez-nous</h1>
+                <p>Parlons de votre projet ensemble</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h2>Demande de devis gratuit</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Prénom *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Nom *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Type de projet *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Sélectionnez votre projet</option>
+                                    <option value="renovation">Rénovation</option>
+                                    <option value="toiture-nettoyage">Nettoyage de toiture</option>
+                                    <option value="toiture-fuite">Réparation de fuite</option>
+                                    <option value="toiture-hydrofuge">Traitement hydrofuge</option>
+                                    <option value="couverture-tuile">Rénovation toiture tuile</option>
+                                    <option value="couverture-ardoise">Rénovation toiture ardoise</option>
+                                    <option value="accessoires">Gouttières et accessoires</option>
+                                    <option value="facade-nettoyage">Nettoyage de façade</option>
+                                    <option value="facade-peinture">Repeindre façade</option>
+                                    <option value="facade-hydrofuge">Traitement hydrofuge façade</option>
+                                    <option value="sous-rampants">Isolation sous-rampants</option>
+                                    <option value="combles">Isolation des combles</option>
+                                    <option value="murs">Isolation des murs</option>
+                                    <option value="traitement-bois">Traitement du bois</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Adresse du projet</label>
+                                <input type="text" id="address" name="address" placeholder="Ville, code postal">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Budget prévisionnel</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez une fourchette</option>
+                                    <option value="moins-5k">Moins de 5 000€</option>
+                                    <option value="5k-15k">5 000€ - 15 000€</option>
+                                    <option value="15k-30k">15 000€ - 30 000€</option>
+                                    <option value="30k-50k">30 000€ - 50 000€</option>
+                                    <option value="plus-50k">Plus de 50 000€</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Décrivez votre projet *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Détaillez vos besoins, contraintes particulières, délais souhaités..." required></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">J'accepte d'être contacté concernant ma demande *</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer ma demande
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <div class="contact-info-card">
+                            <h3>Nos coordonnées</h3>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>Téléphone</strong>
+                                        <p>06 08 36 81 69</p>
+                                        <small>Lun-Ven: 8h-18h | Sam: 8h-12h</small>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <p>contact@innovatoiture.fr</p>
+                                        <small>Réponse sous 24h</small>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Adresse</strong>
+                                            <p>58 rue du général de gaulle<br>Drusenheim 67410</p>
+                                        <small>Zone d'intervention: Bas-Rhin</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <h3>Pourquoi nous choisir ?</h3>
+                            <ul class="advantages">
+                                <li><i class="fas fa-check"></i> Devis gratuit sous 48h</li>
+                                <li><i class="fas fa-check"></i> 20+ ans d'expérience</li>
+                                <li><i class="fas fa-check"></i> Artisans qualifiés RGE</li>
+                                <li><i class="fas fa-check"></i> Garantie décennale</li>
+                                <li><i class="fas fa-check"></i> Matériaux de qualité</li>
+                                <li><i class="fas fa-check"></i> Suivi personnalisé</li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <h3>Nos certifications</h3>
+                            <div class="certifications">
+                                <div class="cert-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>RGE Qualibat</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Assurance décennale</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Éco-artisan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="urgency-contact">
+            <div class="container">
+                <div class="urgency-content">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Urgence ?</h2>
+                    <p>Pour les interventions d'urgence (fuite, dégâts des eaux, sécurisation)</p>
+                    <a href="tel:0123456789" class="btn btn-urgent">
+                        <i class="fas fa-phone"></i>
+                        Appelez maintenant
+                    </a>
+                    <small>Service d'urgence 7j/7 - Devis sur place immédiat</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Notre zone d'intervention</h2>
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Bas-Rhin</h3>
+                    <p>Bas-Rhin et alentours<br>Déplacements gratuits pour devis</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Innova Toiture</h3>
+                    <p>Votre spécialiste toiture, isolation et traitement du bois depuis plus de 20 ans.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#renovation">Rénovation</a></li>
+                        <li><a href="services.html#couverture">Couverture</a></li>
+                        <li><a href="services.html#facade">Façade</a></li>
+                        <li><a href="services.html#isolation">Isolation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 06 08 36 81 69</p>
+                        <p><i class="fas fa-envelope"></i> contact@innova-toiture.fr</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 58 rue du général de gaulle, Drusenheim 67410</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Innova Toiture. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot-ia.js"></script>
+</body>
+</html>
